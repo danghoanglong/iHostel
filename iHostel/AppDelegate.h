@@ -17,6 +17,7 @@
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
+- (void)showAlertWithTitle:(NSString *)title Message:(NSString *)message andDelegate:(id)delegate;
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
 

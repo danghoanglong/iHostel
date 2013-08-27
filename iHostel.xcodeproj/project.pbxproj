@@ -25,6 +25,17 @@
 		BE87AE4617CB4F75009C5B93 /* iHostel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE87AE4417CB4F75009C5B93 /* iHostel.xcdatamodeld */; };
 		BE87AE5517CB50A2009C5B93 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE87AE5317CB50A2009C5B93 /* LoginViewController.m */; };
 		BE87AE5617CB50A2009C5B93 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE87AE5417CB50A2009C5B93 /* LoginViewController.xib */; };
+		BEA1673A17CC4D260014CFAF /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA1673917CC4D260014CFAF /* Util.m */; };
+		BEA1673D17CC68C90014CFAF /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BEA1673C17CC68C90014CFAF /* Icon@2x.png */; };
+		BEA1673F17CC68DF0014CFAF /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BEA1673E17CC68DF0014CFAF /* Icon.png */; };
+		BEA1674217CC72E50014CFAF /* GlobalObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA1674117CC72E50014CFAF /* GlobalObjects.m */; };
+		BEA1674617CC91C00014CFAF /* HostelSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA1674417CC91BF0014CFAF /* HostelSettingViewController.m */; };
+		BEA1674717CC91C00014CFAF /* HostelSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEA1674517CC91BF0014CFAF /* HostelSettingViewController.xib */; };
+		BEA1674917CC91F40014CFAF /* Main_Roof.png in Resources */ = {isa = PBXBuildFile; fileRef = BEA1674817CC91F40014CFAF /* Main_Roof.png */; };
+		BEA1674B17CC94E10014CFAF /* Main_TextField.png in Resources */ = {isa = PBXBuildFile; fileRef = BEA1674A17CC94E10014CFAF /* Main_TextField.png */; };
+		BEA1674D17CC9ACD0014CFAF /* Main_CirleLine.png in Resources */ = {isa = PBXBuildFile; fileRef = BEA1674C17CC9ACD0014CFAF /* Main_CirleLine.png */; };
+		BEA1674F17CCA5120014CFAF /* Main_ShortButton.png in Resources */ = {isa = PBXBuildFile; fileRef = BEA1674E17CCA5120014CFAF /* Main_ShortButton.png */; };
+		BEA1675117CCAE2D0014CFAF /* Main_BackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = BEA1675017CCAE2D0014CFAF /* Main_BackButton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +62,21 @@
 		BE87AE5217CB50A2009C5B93 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		BE87AE5317CB50A2009C5B93 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		BE87AE5417CB50A2009C5B93 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		BEA1673817CC4D260014CFAF /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		BEA1673917CC4D260014CFAF /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		BEA1673B17CC4D320014CFAF /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
+		BEA1673C17CC68C90014CFAF /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		BEA1673E17CC68DF0014CFAF /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		BEA1674017CC72E50014CFAF /* GlobalObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalObjects.h; sourceTree = "<group>"; };
+		BEA1674117CC72E50014CFAF /* GlobalObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalObjects.m; sourceTree = "<group>"; };
+		BEA1674317CC91BF0014CFAF /* HostelSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostelSettingViewController.h; sourceTree = "<group>"; };
+		BEA1674417CC91BF0014CFAF /* HostelSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostelSettingViewController.m; sourceTree = "<group>"; };
+		BEA1674517CC91BF0014CFAF /* HostelSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HostelSettingViewController.xib; sourceTree = "<group>"; };
+		BEA1674817CC91F40014CFAF /* Main_Roof.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Main_Roof.png; sourceTree = "<group>"; };
+		BEA1674A17CC94E10014CFAF /* Main_TextField.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Main_TextField.png; sourceTree = "<group>"; };
+		BEA1674C17CC9ACD0014CFAF /* Main_CirleLine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Main_CirleLine.png; sourceTree = "<group>"; };
+		BEA1674E17CCA5120014CFAF /* Main_ShortButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Main_ShortButton.png; sourceTree = "<group>"; };
+		BEA1675017CCAE2D0014CFAF /* Main_BackButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Main_BackButton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +97,13 @@
 		BE80C0CD17CB6A3000D4552E /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				BEA1675017CCAE2D0014CFAF /* Main_BackButton.png */,
+				BEA1674E17CCA5120014CFAF /* Main_ShortButton.png */,
+				BEA1674C17CC9ACD0014CFAF /* Main_CirleLine.png */,
+				BEA1674A17CC94E10014CFAF /* Main_TextField.png */,
+				BEA1674817CC91F40014CFAF /* Main_Roof.png */,
+				BEA1673E17CC68DF0014CFAF /* Icon.png */,
+				BEA1673C17CC68C90014CFAF /* Icon@2x.png */,
 				BE80C0CE17CB6A3000D4552E /* LoginScreen_Background.png */,
 				BE80C0CF17CB6A3000D4552E /* LoginScreen_ButtonDangNhap.png */,
 				BE80C0D017CB6A3000D4552E /* LoginScreen_TextFieldPassword.png */,
@@ -157,6 +190,9 @@
 				BE87AE5217CB50A2009C5B93 /* LoginViewController.h */,
 				BE87AE5317CB50A2009C5B93 /* LoginViewController.m */,
 				BE87AE5417CB50A2009C5B93 /* LoginViewController.xib */,
+				BEA1674317CC91BF0014CFAF /* HostelSettingViewController.h */,
+				BEA1674417CC91BF0014CFAF /* HostelSettingViewController.m */,
+				BEA1674517CC91BF0014CFAF /* HostelSettingViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -171,6 +207,7 @@
 		BE87AE5017CB5062009C5B93 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				BEA1673717CC4CF50014CFAF /* Utility */,
 				BE80C0CD17CB6A3000D4552E /* Assets */,
 				BE87AE5117CB5062009C5B93 /* Database */,
 			);
@@ -183,6 +220,18 @@
 				BE87AE4417CB4F75009C5B93 /* iHostel.xcdatamodeld */,
 			);
 			path = Database;
+			sourceTree = "<group>";
+		};
+		BEA1673717CC4CF50014CFAF /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				BEA1673817CC4D260014CFAF /* Util.h */,
+				BEA1673917CC4D260014CFAF /* Util.m */,
+				BEA1673B17CC4D320014CFAF /* Define.h */,
+				BEA1674017CC72E50014CFAF /* GlobalObjects.h */,
+				BEA1674117CC72E50014CFAF /* GlobalObjects.m */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +295,14 @@
 				BE80C0D517CB6A3000D4552E /* LoginScreen_TextFieldPassword.png in Resources */,
 				BE80C0D617CB6A3000D4552E /* LoginScreen_TextFieldUser.png in Resources */,
 				BE80C0D717CB6A3000D4552E /* LoginScreen_Title.png in Resources */,
+				BEA1673D17CC68C90014CFAF /* Icon@2x.png in Resources */,
+				BEA1673F17CC68DF0014CFAF /* Icon.png in Resources */,
+				BEA1674717CC91C00014CFAF /* HostelSettingViewController.xib in Resources */,
+				BEA1674917CC91F40014CFAF /* Main_Roof.png in Resources */,
+				BEA1674B17CC94E10014CFAF /* Main_TextField.png in Resources */,
+				BEA1674D17CC9ACD0014CFAF /* Main_CirleLine.png in Resources */,
+				BEA1674F17CCA5120014CFAF /* Main_ShortButton.png in Resources */,
+				BEA1675117CCAE2D0014CFAF /* Main_BackButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +317,9 @@
 				BE87AE3D17CB4F75009C5B93 /* AppDelegate.m in Sources */,
 				BE87AE4617CB4F75009C5B93 /* iHostel.xcdatamodeld in Sources */,
 				BE87AE5517CB50A2009C5B93 /* LoginViewController.m in Sources */,
+				BEA1673A17CC4D260014CFAF /* Util.m in Sources */,
+				BEA1674217CC72E50014CFAF /* GlobalObjects.m in Sources */,
+				BEA1674617CC91C00014CFAF /* HostelSettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +349,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hai Nguyen (7XV4A7MU2Z)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -304,6 +364,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4C4813DE-DD96-475B-B015-110F838E9916";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -339,6 +400,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iHostel/iHostel-Prefix.pch";
 				INFOPLIST_FILE = "iHostel/iHostel-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -350,6 +412,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iHostel/iHostel-Prefix.pch";
 				INFOPLIST_FILE = "iHostel/iHostel-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

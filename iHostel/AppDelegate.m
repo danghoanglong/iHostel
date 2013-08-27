@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LoginViewController.h"
+#import "GlobalObjects.h"
 
 @implementation AppDelegate
 
@@ -27,6 +28,7 @@
     controller = nil;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    [GlobalObjects sharedInstance];
     return YES;
 }
 
@@ -58,6 +60,14 @@
     [self saveContext];
 }
 
+#pragma mark Methods
+- (void)showAlertWithTitle:(NSString *)title Message:(NSString *)message andDelegate:(id)delegate
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+}
+
+#pragma mark CoreData Delegate
 - (void)saveContext
 {
     NSError *error = nil;
