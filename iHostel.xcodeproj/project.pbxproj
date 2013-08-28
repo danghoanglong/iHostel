@@ -22,9 +22,26 @@
 		BE87AE3F17CB4F75009C5B93 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BE87AE3E17CB4F75009C5B93 /* Default.png */; };
 		BE87AE4117CB4F75009C5B93 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE87AE4017CB4F75009C5B93 /* Default@2x.png */; };
 		BE87AE4317CB4F75009C5B93 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE87AE4217CB4F75009C5B93 /* Default-568h@2x.png */; };
-		BE87AE4617CB4F75009C5B93 /* iHostel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE87AE4417CB4F75009C5B93 /* iHostel.xcdatamodeld */; };
 		BE87AE5517CB50A2009C5B93 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE87AE5317CB50A2009C5B93 /* LoginViewController.m */; };
 		BE87AE5617CB50A2009C5B93 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE87AE5417CB50A2009C5B93 /* LoginViewController.xib */; };
+		BE95D10917CD9CB200DC2C41 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE95D10717CD9CB200DC2C41 /* HomeViewController.m */; };
+		BE95D10A17CD9CB200DC2C41 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE95D10817CD9CB200DC2C41 /* HomeViewController.xib */; };
+		BE95D10F17CDA9D600DC2C41 /* MemberView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE95D10E17CDA9D600DC2C41 /* MemberView.xib */; };
+		BE95D11217CDA9EE00DC2C41 /* MemberView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE95D11117CDA9EE00DC2C41 /* MemberView.m */; };
+		BE95D11517CDAEBC00DC2C41 /* iHostel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE95D11317CDAEBC00DC2C41 /* iHostel.xcdatamodeld */; };
+		BE95D11917CDD95700DC2C41 /* AddMemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE95D11717CDD95600DC2C41 /* AddMemberViewController.m */; };
+		BE95D11A17CDD95700DC2C41 /* AddMemberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE95D11817CDD95700DC2C41 /* AddMemberViewController.xib */; };
+		BE95D12217CDE25D00DC2C41 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE95D12017CDE25D00DC2C41 /* MainViewController.m */; };
+		BE95D12317CDE25D00DC2C41 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE95D12117CDE25D00DC2C41 /* MainViewController.xib */; };
+		BE95D12717CDE29F00DC2C41 /* FunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE95D12517CDE29F00DC2C41 /* FunctionViewController.m */; };
+		BE95D12817CDE29F00DC2C41 /* FunctionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE95D12617CDE29F00DC2C41 /* FunctionViewController.xib */; };
+		BE95D12A17CDE57500DC2C41 /* Main_SlideOutButton.png in Resources */ = {isa = PBXBuildFile; fileRef = BE95D12917CDE57500DC2C41 /* Main_SlideOutButton.png */; };
+		BE95D12C17CDF49000DC2C41 /* FunctionScreen_Roof.png in Resources */ = {isa = PBXBuildFile; fileRef = BE95D12B17CDF49000DC2C41 /* FunctionScreen_Roof.png */; };
+		BE95D12E17CE017300DC2C41 /* FunctionScreen_MemberManagement.png in Resources */ = {isa = PBXBuildFile; fileRef = BE95D12D17CE017300DC2C41 /* FunctionScreen_MemberManagement.png */; };
+		BE95D13317CE090000DC2C41 /* FunctionScreen_ReceiptManagement.png in Resources */ = {isa = PBXBuildFile; fileRef = BE95D12F17CE090000DC2C41 /* FunctionScreen_ReceiptManagement.png */; };
+		BE95D13417CE090000DC2C41 /* FunctionScreen_HomeManagement.png in Resources */ = {isa = PBXBuildFile; fileRef = BE95D13017CE090000DC2C41 /* FunctionScreen_HomeManagement.png */; };
+		BE95D13517CE090000DC2C41 /* FunctionScreen_ReportManagement.png in Resources */ = {isa = PBXBuildFile; fileRef = BE95D13117CE090000DC2C41 /* FunctionScreen_ReportManagement.png */; };
+		BE95D13617CE090000DC2C41 /* FunctionScreen_SettingManagement.png in Resources */ = {isa = PBXBuildFile; fileRef = BE95D13217CE090000DC2C41 /* FunctionScreen_SettingManagement.png */; };
 		BEA1673A17CC4D260014CFAF /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA1673917CC4D260014CFAF /* Util.m */; };
 		BEA1673D17CC68C90014CFAF /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BEA1673C17CC68C90014CFAF /* Icon@2x.png */; };
 		BEA1673F17CC68DF0014CFAF /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BEA1673E17CC68DF0014CFAF /* Icon.png */; };
@@ -58,10 +75,32 @@
 		BE87AE3E17CB4F75009C5B93 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		BE87AE4017CB4F75009C5B93 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		BE87AE4217CB4F75009C5B93 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		BE87AE4517CB4F75009C5B93 /* iHostel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iHostel.xcdatamodel; sourceTree = "<group>"; };
 		BE87AE5217CB50A2009C5B93 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		BE87AE5317CB50A2009C5B93 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		BE87AE5417CB50A2009C5B93 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		BE95D10617CD9CB200DC2C41 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		BE95D10717CD9CB200DC2C41 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		BE95D10817CD9CB200DC2C41 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		BE95D10E17CDA9D600DC2C41 /* MemberView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemberView.xib; sourceTree = "<group>"; };
+		BE95D11017CDA9EE00DC2C41 /* MemberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberView.h; sourceTree = "<group>"; };
+		BE95D11117CDA9EE00DC2C41 /* MemberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberView.m; sourceTree = "<group>"; };
+		BE95D11417CDAEBC00DC2C41 /* iHostel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iHostel.xcdatamodel; sourceTree = "<group>"; };
+		BE95D11617CDD95600DC2C41 /* AddMemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMemberViewController.h; sourceTree = "<group>"; };
+		BE95D11717CDD95600DC2C41 /* AddMemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMemberViewController.m; sourceTree = "<group>"; };
+		BE95D11817CDD95700DC2C41 /* AddMemberViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddMemberViewController.xib; sourceTree = "<group>"; };
+		BE95D11F17CDE25D00DC2C41 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		BE95D12017CDE25D00DC2C41 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		BE95D12117CDE25D00DC2C41 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		BE95D12417CDE29F00DC2C41 /* FunctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionViewController.h; sourceTree = "<group>"; };
+		BE95D12517CDE29F00DC2C41 /* FunctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionViewController.m; sourceTree = "<group>"; };
+		BE95D12617CDE29F00DC2C41 /* FunctionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FunctionViewController.xib; sourceTree = "<group>"; };
+		BE95D12917CDE57500DC2C41 /* Main_SlideOutButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Main_SlideOutButton.png; sourceTree = "<group>"; };
+		BE95D12B17CDF49000DC2C41 /* FunctionScreen_Roof.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FunctionScreen_Roof.png; sourceTree = "<group>"; };
+		BE95D12D17CE017300DC2C41 /* FunctionScreen_MemberManagement.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FunctionScreen_MemberManagement.png; sourceTree = "<group>"; };
+		BE95D12F17CE090000DC2C41 /* FunctionScreen_ReceiptManagement.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FunctionScreen_ReceiptManagement.png; sourceTree = "<group>"; };
+		BE95D13017CE090000DC2C41 /* FunctionScreen_HomeManagement.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FunctionScreen_HomeManagement.png; sourceTree = "<group>"; };
+		BE95D13117CE090000DC2C41 /* FunctionScreen_ReportManagement.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FunctionScreen_ReportManagement.png; sourceTree = "<group>"; };
+		BE95D13217CE090000DC2C41 /* FunctionScreen_SettingManagement.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FunctionScreen_SettingManagement.png; sourceTree = "<group>"; };
 		BEA1673817CC4D260014CFAF /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
 		BEA1673917CC4D260014CFAF /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
 		BEA1673B17CC4D320014CFAF /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
@@ -97,6 +136,13 @@
 		BE80C0CD17CB6A3000D4552E /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				BE95D12F17CE090000DC2C41 /* FunctionScreen_ReceiptManagement.png */,
+				BE95D13017CE090000DC2C41 /* FunctionScreen_HomeManagement.png */,
+				BE95D13117CE090000DC2C41 /* FunctionScreen_ReportManagement.png */,
+				BE95D13217CE090000DC2C41 /* FunctionScreen_SettingManagement.png */,
+				BE95D12D17CE017300DC2C41 /* FunctionScreen_MemberManagement.png */,
+				BE95D12B17CDF49000DC2C41 /* FunctionScreen_Roof.png */,
+				BE95D12917CDE57500DC2C41 /* Main_SlideOutButton.png */,
 				BEA1675017CCAE2D0014CFAF /* Main_BackButton.png */,
 				BEA1674E17CCA5120014CFAF /* Main_ShortButton.png */,
 				BEA1674C17CC9ACD0014CFAF /* Main_CirleLine.png */,
@@ -187,12 +233,10 @@
 		BE87AE4E17CB5062009C5B93 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				BE87AE5217CB50A2009C5B93 /* LoginViewController.h */,
-				BE87AE5317CB50A2009C5B93 /* LoginViewController.m */,
-				BE87AE5417CB50A2009C5B93 /* LoginViewController.xib */,
-				BEA1674317CC91BF0014CFAF /* HostelSettingViewController.h */,
-				BEA1674417CC91BF0014CFAF /* HostelSettingViewController.m */,
-				BEA1674517CC91BF0014CFAF /* HostelSettingViewController.xib */,
+				BE95D11E17CDE20B00DC2C41 /* Member Management */,
+				BE95D11D17CDE1FC00DC2C41 /* Home */,
+				BE95D11C17CDE1E400DC2C41 /* Setting */,
+				BE95D11B17CDE1CD00DC2C41 /* Login */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -200,6 +244,9 @@
 		BE87AE4F17CB5062009C5B93 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BE95D10E17CDA9D600DC2C41 /* MemberView.xib */,
+				BE95D11017CDA9EE00DC2C41 /* MemberView.h */,
+				BE95D11117CDA9EE00DC2C41 /* MemberView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -217,9 +264,55 @@
 		BE87AE5117CB5062009C5B93 /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				BE87AE4417CB4F75009C5B93 /* iHostel.xcdatamodeld */,
+				BE95D11317CDAEBC00DC2C41 /* iHostel.xcdatamodeld */,
 			);
 			path = Database;
+			sourceTree = "<group>";
+		};
+		BE95D11B17CDE1CD00DC2C41 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BE87AE5217CB50A2009C5B93 /* LoginViewController.h */,
+				BE87AE5317CB50A2009C5B93 /* LoginViewController.m */,
+				BE87AE5417CB50A2009C5B93 /* LoginViewController.xib */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		BE95D11C17CDE1E400DC2C41 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				BEA1674317CC91BF0014CFAF /* HostelSettingViewController.h */,
+				BEA1674417CC91BF0014CFAF /* HostelSettingViewController.m */,
+				BEA1674517CC91BF0014CFAF /* HostelSettingViewController.xib */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
+		BE95D11D17CDE1FC00DC2C41 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BE95D10617CD9CB200DC2C41 /* HomeViewController.h */,
+				BE95D10717CD9CB200DC2C41 /* HomeViewController.m */,
+				BE95D10817CD9CB200DC2C41 /* HomeViewController.xib */,
+				BE95D11F17CDE25D00DC2C41 /* MainViewController.h */,
+				BE95D12017CDE25D00DC2C41 /* MainViewController.m */,
+				BE95D12117CDE25D00DC2C41 /* MainViewController.xib */,
+				BE95D12417CDE29F00DC2C41 /* FunctionViewController.h */,
+				BE95D12517CDE29F00DC2C41 /* FunctionViewController.m */,
+				BE95D12617CDE29F00DC2C41 /* FunctionViewController.xib */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		BE95D11E17CDE20B00DC2C41 /* Member Management */ = {
+			isa = PBXGroup;
+			children = (
+				BE95D11617CDD95600DC2C41 /* AddMemberViewController.h */,
+				BE95D11717CDD95600DC2C41 /* AddMemberViewController.m */,
+				BE95D11817CDD95700DC2C41 /* AddMemberViewController.xib */,
+			);
+			name = "Member Management";
 			sourceTree = "<group>";
 		};
 		BEA1673717CC4CF50014CFAF /* Utility */ = {
@@ -303,6 +396,18 @@
 				BEA1674D17CC9ACD0014CFAF /* Main_CirleLine.png in Resources */,
 				BEA1674F17CCA5120014CFAF /* Main_ShortButton.png in Resources */,
 				BEA1675117CCAE2D0014CFAF /* Main_BackButton.png in Resources */,
+				BE95D10A17CD9CB200DC2C41 /* HomeViewController.xib in Resources */,
+				BE95D10F17CDA9D600DC2C41 /* MemberView.xib in Resources */,
+				BE95D11A17CDD95700DC2C41 /* AddMemberViewController.xib in Resources */,
+				BE95D12317CDE25D00DC2C41 /* MainViewController.xib in Resources */,
+				BE95D12817CDE29F00DC2C41 /* FunctionViewController.xib in Resources */,
+				BE95D12A17CDE57500DC2C41 /* Main_SlideOutButton.png in Resources */,
+				BE95D12C17CDF49000DC2C41 /* FunctionScreen_Roof.png in Resources */,
+				BE95D12E17CE017300DC2C41 /* FunctionScreen_MemberManagement.png in Resources */,
+				BE95D13317CE090000DC2C41 /* FunctionScreen_ReceiptManagement.png in Resources */,
+				BE95D13417CE090000DC2C41 /* FunctionScreen_HomeManagement.png in Resources */,
+				BE95D13517CE090000DC2C41 /* FunctionScreen_ReportManagement.png in Resources */,
+				BE95D13617CE090000DC2C41 /* FunctionScreen_SettingManagement.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,11 +420,16 @@
 			files = (
 				BE87AE3917CB4F75009C5B93 /* main.m in Sources */,
 				BE87AE3D17CB4F75009C5B93 /* AppDelegate.m in Sources */,
-				BE87AE4617CB4F75009C5B93 /* iHostel.xcdatamodeld in Sources */,
 				BE87AE5517CB50A2009C5B93 /* LoginViewController.m in Sources */,
 				BEA1673A17CC4D260014CFAF /* Util.m in Sources */,
 				BEA1674217CC72E50014CFAF /* GlobalObjects.m in Sources */,
 				BEA1674617CC91C00014CFAF /* HostelSettingViewController.m in Sources */,
+				BE95D10917CD9CB200DC2C41 /* HomeViewController.m in Sources */,
+				BE95D11217CDA9EE00DC2C41 /* MemberView.m in Sources */,
+				BE95D11517CDAEBC00DC2C41 /* iHostel.xcdatamodeld in Sources */,
+				BE95D11917CDD95700DC2C41 /* AddMemberViewController.m in Sources */,
+				BE95D12217CDE25D00DC2C41 /* MainViewController.m in Sources */,
+				BE95D12717CDE29F00DC2C41 /* FunctionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,14 +552,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		BE87AE4417CB4F75009C5B93 /* iHostel.xcdatamodeld */ = {
+		BE95D11317CDAEBC00DC2C41 /* iHostel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				BE87AE4517CB4F75009C5B93 /* iHostel.xcdatamodel */,
+				BE95D11417CDAEBC00DC2C41 /* iHostel.xcdatamodel */,
 			);
-			currentVersion = BE87AE4517CB4F75009C5B93 /* iHostel.xcdatamodel */;
-			name = iHostel.xcdatamodeld;
-			path = ../../iHostel.xcdatamodeld;
+			currentVersion = BE95D11417CDAEBC00DC2C41 /* iHostel.xcdatamodel */;
+			path = iHostel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

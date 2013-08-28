@@ -29,6 +29,41 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     [GlobalObjects sharedInstance];
+    
+    NSManagedObjectContext *context = [self managedObjectContext];
+    NSManagedObject *member = [NSEntityDescription
+                                       insertNewObjectForEntityForName:@"Member"
+                                       inManagedObjectContext:context];
+    [member setValue:@"Long" forKey:@"name"];
+    [member setValue:[NSNumber numberWithInt:1] forKey:@"id"];
+    
+    NSManagedObject *receipt = [NSEntityDescription
+                                          insertNewObjectForEntityForName:@"Receipt"
+                                          inManagedObjectContext:context];
+    [receipt setValue:[NSDate date] forKey:@"date"];
+    [receipt setValue:[NSNumber numberWithInt:2] forKey:@"id"];
+    
+    NSManagedObject *receiptDetail = [NSEntityDescription
+                                insertNewObjectForEntityForName:@"ReceiptDetail"
+                                inManagedObjectContext:context];
+    [receiptDetail setValue:[NSNumber numberWithInt:3] forKey:@"id"];    
+    [receiptDetail setValue:member forKey:@"memberID"];
+    [receiptDetail setValue:receipt forKey:@"receiptID"];
+    
+    NSError *error;
+    if (![context save:&error]) {
+        NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
+    }
+    
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription
+                                   entityForName:@"Member" inManagedObjectContext:context];
+    [fetchRequest setEntity:entity];
+    NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:&error];
+    for (NSManagedObject *info in fetchedObjects) {
+        NSLog(@"Name: %@", [info valueForKey:@"name"]);
+    }
+    
     return YES;
 }
 

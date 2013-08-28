@@ -103,7 +103,7 @@
 										<bool key="IBUIClipsSubviews">YES</bool>
 										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 										<int key="IBUIContentVerticalAlignment">0</int>
-										<string key="IBUIText"/>
+										<string key="IBUIText">long</string>
 										<string key="IBUIPlaceholder">Tên đăng nhập</string>
 										<object class="NSColor" key="IBUITextColor">
 											<int key="NSColorSpace">3</int>
@@ -154,7 +154,7 @@
 										<bool key="IBUIClipsSubviews">YES</bool>
 										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 										<int key="IBUIContentVerticalAlignment">0</int>
-										<string key="IBUIText"/>
+										<string key="IBUIText">1234</string>
 										<string key="IBUIPlaceholder">Mật khẩu</string>
 										<object class="NSColor" key="IBUITextColor">
 											<int key="NSColorSpace">3</int>
@@ -189,13 +189,12 @@
 										<string key="NSFrame">{{100, 190}, {150, 37}}</string>
 										<reference key="NSSuperview" ref="974606061"/>
 										<reference key="NSWindow"/>
-										<reference key="NSNextKeyView"/>
 										<string key="NSReuseIdentifierKey">_NS:9</string>
 										<bool key="IBUIOpaque">NO</bool>
 										<bool key="IBUIClipsSubviews">YES</bool>
 										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 										<int key="IBUIContentVerticalAlignment">0</int>
-										<string key="IBUIText"/>
+										<string key="IBUIText">1234</string>
 										<string key="IBUIPlaceholder">Xác nhận mật khẩu</string>
 										<object class="NSColor" key="IBUITextColor">
 											<int key="NSColorSpace">3</int>

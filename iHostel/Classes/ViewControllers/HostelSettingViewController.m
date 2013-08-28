@@ -7,6 +7,7 @@
 //
 
 #import "HostelSettingViewController.h"
+#import "MainViewController.h"
 #import "Define.h"
 #import "GlobalObjects.h"
 
@@ -118,7 +119,10 @@
     [[GlobalObjects sharedInstance].userDefaults setObject:self.wasterPriceTextField.text forKey:kWaterPrice];
     [[GlobalObjects sharedInstance].userDefaults setObject:self.internetPriceTextField.text forKey:kInternetPrice];
     
-    [mainAppDelegate showAlertWithTitle:nil Message:@"OK" andDelegate:self];
+    MainViewController *controller = [[MainViewController alloc] init];
+    [mainAppDelegate.navigationController popToRootViewControllerAnimated:NO];
+    [mainAppDelegate.navigationController pushViewController:controller animated:YES];
+    controller = nil;
 }
 
 - (IBAction)backButtonPressed:(id)sender

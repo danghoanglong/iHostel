@@ -54,8 +54,15 @@
 #define kWaterPrice                         @"WaterPrice"
 #define kInternetPrice                      @"InternetPrice"
 
+#define kActionHome                         0
+#define kActionMember                       1
+#define kActionReceipt                      2
+#define kActionReport                       3
+#define kActionSetting                      4
 
+//----------------------------------------------------------------
 #pragma mark Message
+
 #define mForgetUsername                     @"Bạn hãy nhập Tên đăng nhập"
 #define mForgetPassword                     @"Bạn hãy nhập Mật khẩu"
 #define mForgetConfirmPassword              @"Bạn hãy nhập Xác nhận mật khẩu"

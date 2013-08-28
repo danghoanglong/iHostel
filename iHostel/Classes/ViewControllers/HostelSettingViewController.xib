@@ -93,7 +93,7 @@
 												<int key="IBUITag">1</int>
 												<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 												<int key="IBUIContentVerticalAlignment">0</int>
-												<string key="IBUIText"/>
+												<string key="IBUIText">4 anh em sieu nhan</string>
 												<string key="IBUIPlaceholder">Tên phòng trọ</string>
 												<object class="NSColor" key="IBUITextColor">
 													<int key="NSColorSpace">3</int>
@@ -158,7 +158,7 @@
 												<int key="IBUITag">2</int>
 												<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 												<int key="IBUIContentVerticalAlignment">0</int>
-												<string key="IBUIText"/>
+												<string key="IBUIText">36/6 Giai Phong - Tan Binh - Tp.HCM</string>
 												<string key="IBUIPlaceholder">Địa chỉ phòng trọ</string>
 												<object class="NSColor" key="IBUITextColor">
 													<int key="NSColorSpace">3</int>
@@ -211,7 +211,7 @@
 												<int key="IBUITag">3</int>
 												<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 												<int key="IBUIContentVerticalAlignment">0</int>
-												<string key="IBUIText"/>
+												<string key="IBUIText">Nguyen Van Hung</string>
 												<string key="IBUIPlaceholder">Tên chủ nhà trọ</string>
 												<object class="NSColor" key="IBUITextColor">
 													<int key="NSColorSpace">3</int>
@@ -264,7 +264,7 @@
 												<int key="IBUITag">4</int>
 												<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 												<int key="IBUIContentVerticalAlignment">0</int>
-												<string key="IBUIText"/>
+												<string key="IBUIText">01272623069</string>
 												<string key="IBUIPlaceholder">Số điện thoại chủ nhà trọ</string>
 												<object class="NSColor" key="IBUITextColor">
 													<int key="NSColorSpace">3</int>
@@ -337,7 +337,7 @@
 												<int key="IBUITag">5</int>
 												<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 												<int key="IBUIContentVerticalAlignment">0</int>
-												<string key="IBUIText"/>
+												<string key="IBUIText">3000</string>
 												<string key="IBUIPlaceholder">Giá tiền điện</string>
 												<object class="NSColor" key="IBUITextColor">
 													<int key="NSColorSpace">3</int>
@@ -391,7 +391,7 @@
 												<int key="IBUITag">6</int>
 												<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 												<int key="IBUIContentVerticalAlignment">0</int>
-												<string key="IBUIText"/>
+												<string key="IBUIText">50000</string>
 												<string key="IBUIPlaceholder">Giá tiền nước</string>
 												<object class="NSColor" key="IBUITextColor">
 													<int key="NSColorSpace">3</int>
@@ -445,7 +445,7 @@
 												<int key="IBUITag">7</int>
 												<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 												<int key="IBUIContentVerticalAlignment">0</int>
-												<string key="IBUIText"/>
+												<string key="IBUIText">70000</string>
 												<string key="IBUIPlaceholder">Giá tiền internet</string>
 												<object class="NSColor" key="IBUITextColor">
 													<int key="NSColorSpace">3</int>

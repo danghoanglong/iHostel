@@ -10,6 +10,7 @@
 #import "Define.h"
 #import "GlobalObjects.h"
 #import "HostelSettingViewController.h"
+#import "MainViewController.h"
 
 @interface LoginViewController ()
 
@@ -123,8 +124,9 @@
         if ([self.usernameTextField.text isEqualToString:user] == YES &&
             [self.passwordTextField.text isEqualToString:pass] == YES)
         {
-            HostelSettingViewController *controller = [[HostelSettingViewController alloc] init];
-            [mainAppDelegate.navigationController pushViewController: controller animated:YES];
+            MainViewController *controller = [[MainViewController alloc] init];
+            [mainAppDelegate.navigationController popToRootViewControllerAnimated:NO];
+            [mainAppDelegate.navigationController pushViewController:controller animated:YES];
             controller = nil;
         }
         else
