@@ -8,6 +8,8 @@
 
 #import "FunctionViewController.h"
 #import "Define.h"
+#import "HomeViewController.h"
+#import "ListMemberViewController.h"
 
 @interface FunctionViewController ()
 
@@ -28,6 +30,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self setSelected: mainAppDelegate.currentPage];
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,32 +41,77 @@
 
 - (void)viewDidUnload {
     [self setManageMemberButton:nil];
+    [self setHomeButton:nil];
+    [self setManageReceiptButton:nil];
+    [self setManageReportButton:nil];
+    [self setSettingButton:nil];
     [super viewDidUnload];
+}
+
+#pragma mark Methods
+- (void)setSelected:(int)index
+{
+    [self.homeButton setSelected:NO];
+    [self.settingButton setSelected:NO];
+    [self.manageReportButton setSelected:NO];
+    [self.manageReceiptButton setSelected:NO];
+    [self.manageMemberButton setSelected:NO];
+    
+    switch (index) {
+        case kHomeController:
+            [self.homeButton setSelected:YES];
+            break;
+        case kListMemberController:
+            [self.manageMemberButton setSelected:YES];
+            break;
+        case kReceiptManagementController:
+            [self.manageReceiptButton setSelected:YES];
+            break;
+        case kReportManagementController:
+            [self.manageReportButton setSelected:YES];
+            break;
+        case kSettingController:
+            [self.settingButton setSelected:YES];
+            break;
+        default:
+            [self.homeButton setSelected:YES];
+            break;
+    }
+}
+
+- (void)showController:(int)index
+{
+    if (mainAppDelegate.currentPage != index)
+    {
+        mainAppDelegate.currentPage = index;
+        [mainAppDelegate showController:index];
+        [self setSelected:index];
+    }
 }
 
 #pragma mark Events
 - (IBAction)manageMemberButtonPressed:(id)sender
 {
-    [_delegate actionWithKey:kActionMember];
+    [self showController:kListMemberController];
 }
 
 - (IBAction)manageHomeButtonPressed:(id)sender
 {
-    [_delegate actionWithKey:kActionHome];
+    [self showController:kHomeController];
 }
 
 - (IBAction)manageReceiptButtonPressed:(id)sender
 {
-    [_delegate actionWithKey:kActionReceipt];
+    [self showController:kReceiptManagementController];
 }
 
 - (IBAction)manageReportButtonPressed:(id)sender
 {
-    [_delegate actionWithKey:kActionReport];
+    [self showController:kReportManagementController];
 }
 
 - (IBAction)manageSettingButtonPressed:(id)sender
 {
-    [_delegate actionWithKey:kActionSetting];
+    [self showController:kSettingController];
 }
 @end

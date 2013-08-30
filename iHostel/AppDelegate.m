@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "LoginViewController.h"
 #import "GlobalObjects.h"
+#import "Define.h"
 
 @implementation AppDelegate
 
@@ -22,7 +23,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     LoginViewController *controller = [[LoginViewController alloc] init];
-    self.navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
+    self.navigationController = [[SlideNavigationController alloc] initWithRootViewController:controller];
     self.window.rootViewController = self.navigationController;
     self.navigationController.navigationBarHidden = YES;
     controller = nil;
@@ -30,39 +31,39 @@
     [self.window makeKeyAndVisible];
     [GlobalObjects sharedInstance];
     
-    NSManagedObjectContext *context = [self managedObjectContext];
-    NSManagedObject *member = [NSEntityDescription
-                                       insertNewObjectForEntityForName:@"Member"
-                                       inManagedObjectContext:context];
-    [member setValue:@"Long" forKey:@"name"];
-    [member setValue:[NSNumber numberWithInt:1] forKey:@"id"];
-    
-    NSManagedObject *receipt = [NSEntityDescription
-                                          insertNewObjectForEntityForName:@"Receipt"
-                                          inManagedObjectContext:context];
-    [receipt setValue:[NSDate date] forKey:@"date"];
-    [receipt setValue:[NSNumber numberWithInt:2] forKey:@"id"];
-    
-    NSManagedObject *receiptDetail = [NSEntityDescription
-                                insertNewObjectForEntityForName:@"ReceiptDetail"
-                                inManagedObjectContext:context];
-    [receiptDetail setValue:[NSNumber numberWithInt:3] forKey:@"id"];    
-    [receiptDetail setValue:member forKey:@"memberID"];
-    [receiptDetail setValue:receipt forKey:@"receiptID"];
-    
-    NSError *error;
-    if (![context save:&error]) {
-        NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
-    }
-    
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entity = [NSEntityDescription
-                                   entityForName:@"Member" inManagedObjectContext:context];
-    [fetchRequest setEntity:entity];
-    NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:&error];
-    for (NSManagedObject *info in fetchedObjects) {
-        NSLog(@"Name: %@", [info valueForKey:@"name"]);
-    }
+//    NSManagedObjectContext *context = [self managedObjectContext];
+//    NSManagedObject *member = [NSEntityDescription
+//                                       insertNewObjectForEntityForName:@"Member"
+//                                       inManagedObjectContext:context];
+//    [member setValue:@"Long" forKey:@"name"];
+//    [member setValue:[NSNumber numberWithInt:1] forKey:@"id"];
+//    
+//    NSManagedObject *receipt = [NSEntityDescription
+//                                          insertNewObjectForEntityForName:@"Receipt"
+//                                          inManagedObjectContext:context];
+//    [receipt setValue:[NSDate date] forKey:@"date"];
+//    [receipt setValue:[NSNumber numberWithInt:2] forKey:@"id"];
+//    
+//    NSManagedObject *receiptDetail = [NSEntityDescription
+//                                insertNewObjectForEntityForName:@"ReceiptDetail"
+//                                inManagedObjectContext:context];
+//    [receiptDetail setValue:[NSNumber numberWithInt:3] forKey:@"id"];    
+//    [receiptDetail setValue:member forKey:@"memberID"];
+//    [receiptDetail setValue:receipt forKey:@"receiptID"];
+//    
+//    NSError *error;
+//    if (![context save:&error]) {
+//        NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
+//    }
+//    
+//    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+//    NSEntityDescription *entity = [NSEntityDescription
+//                                   entityForName:@"Member" inManagedObjectContext:context];
+//    [fetchRequest setEntity:entity];
+//    NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:&error];
+//    for (NSManagedObject *info in fetchedObjects) {
+//        NSLog(@"Name: %@", [info valueForKey:@"name"]);
+//    }
     
     return YES;
 }
@@ -100,6 +101,45 @@
 {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [alert show];
+}
+
+- (void)showController:(int)index
+{
+    switch (index) {
+        case kHomeController:
+            if (homeViewController == nil) {
+                homeViewController = [[HomeViewController alloc] init];
+            }
+            [self.navigationController switchToViewController:homeViewController withCompletion:nil];
+            break;
+        case kListMemberController:
+            if (listMemberViewController == nil) {
+                listMemberViewController = [[ListMemberViewController alloc] init];
+            }
+            [self.navigationController switchToViewController:listMemberViewController withCompletion:nil];
+            break;
+        case kReceiptManagementController:
+            if (receiptManagementViewController == nil) {
+                receiptManagementViewController = [[ReceiptManagementViewController alloc] init];
+            }
+            [self.navigationController switchToViewController:receiptManagementViewController withCompletion:nil];
+            break;
+        case kReportManagementController:
+            if (reportManagementViewController == nil) {
+                reportManagementViewController = [[ReportManagementViewController alloc] init];
+            }
+            [self.navigationController switchToViewController:reportManagementViewController withCompletion:nil];
+            break;
+        case kSettingController:
+            if (hostelSettingViewController == nil) {
+                hostelSettingViewController = [[HostelSettingViewController alloc] init];
+            }
+            [self.navigationController switchToViewController:hostelSettingViewController withCompletion:nil];
+            break;
+        default:
+            break;
+    }
+    
 }
 
 #pragma mark CoreData Delegate

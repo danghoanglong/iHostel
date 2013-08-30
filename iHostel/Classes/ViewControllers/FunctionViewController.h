@@ -8,20 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol FunctionViewControllerDelegate <NSObject>
-
-@optional
-- (void)actionWithKey:(int)key;
-
-@required
-//- (void)animalSelected:(Animal *)animal;
-
-@end
-
 @interface FunctionViewController : UIViewController
 
-@property (nonatomic, assign) id<FunctionViewControllerDelegate> delegate;
 @property (strong, nonatomic) IBOutlet UIButton *manageMemberButton;
+@property (strong, nonatomic) IBOutlet UIButton *homeButton;
+@property (strong, nonatomic) IBOutlet UIButton *manageReceiptButton;
+@property (strong, nonatomic) IBOutlet UIButton *manageReportButton;
+@property (strong, nonatomic) IBOutlet UIButton *settingButton;
 
 - (IBAction)manageMemberButtonPressed:(id)sender;
 - (IBAction)manageHomeButtonPressed:(id)sender;

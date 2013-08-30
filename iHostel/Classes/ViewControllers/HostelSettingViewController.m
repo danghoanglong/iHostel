@@ -7,9 +7,10 @@
 //
 
 #import "HostelSettingViewController.h"
-#import "MainViewController.h"
 #import "Define.h"
 #import "GlobalObjects.h"
+#import "FunctionViewController.h"
+#import "HomeViewController.h"
 
 @interface HostelSettingViewController ()
 {
@@ -43,10 +44,9 @@
                                              selector:@selector(keyboardWillHide:)
                                                  name:UIKeyboardWillHideNotification
                                                object:nil];
-    
     if ([[GlobalObjects sharedInstance].userDefaults boolForKey:kIsFirstRun] == NO)
     {
-        [self.backButton setHidden:YES];
+        [self.slideOutButton setHidden:YES];
     }
 }
 
@@ -75,7 +75,7 @@
     [self setWasterPriceTextField:nil];
     [self setInternetPriceTextField:nil];
     [self setSaveButton:nil];
-    [self setBackButton:nil];
+    [self setSlideOutButton:nil];
     [super viewDidUnload];
 }
 
@@ -119,16 +119,21 @@
     [[GlobalObjects sharedInstance].userDefaults setObject:self.wasterPriceTextField.text forKey:kWaterPrice];
     [[GlobalObjects sharedInstance].userDefaults setObject:self.internetPriceTextField.text forKey:kInternetPrice];
     
-    MainViewController *controller = [[MainViewController alloc] init];
-    [mainAppDelegate.navigationController popToRootViewControllerAnimated:NO];
-    [mainAppDelegate.navigationController pushViewController:controller animated:YES];
-    controller = nil;
+    if (mainAppDelegate.navigationController.leftMenu.class != [FunctionViewController class]) {
+        [mainAppDelegate.navigationController setLeftMenu: [[FunctionViewController alloc] init]];
+    }
+//    HomeViewController *controller = [[HomeViewController alloc] init];
+//    [mainAppDelegate.navigationController popToRootViewControllerAnimated:NO];
+//    [mainAppDelegate.navigationController pushViewController:controller animated:YES];
+//    controller = nil;
+    [mainAppDelegate showController:kHomeController];
 }
 
-- (IBAction)backButtonPressed:(id)sender
+- (IBAction)slideOutButtonPressed:(id)sender
 {
-    [mainAppDelegate.navigationController popViewControllerAnimated:YES];
+    [mainAppDelegate.navigationController performSelector:@selector(leftMenuSelected:) withObject:sender];
 }
+
 
 #pragma mark UITextField Delegate
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
@@ -160,5 +165,16 @@
     }
     
     [self.scrollView setFrame:frame];
+}
+
+#pragma mark SlideNavigationController Delegate
+- (BOOL)slideNavigationControllerShouldDisplayLeftMenu
+{
+    return YES;
+}
+
+- (BOOL)slideNavigationControllerShouldDisplayRightMenu
+{
+    return NO;
 }
 @end

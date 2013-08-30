@@ -10,7 +10,8 @@
 #import "Define.h"
 #import "GlobalObjects.h"
 #import "HostelSettingViewController.h"
-#import "MainViewController.h"
+#import "FunctionViewController.h"
+#import "HomeViewController.h"
 
 @interface LoginViewController ()
 
@@ -124,10 +125,15 @@
         if ([self.usernameTextField.text isEqualToString:user] == YES &&
             [self.passwordTextField.text isEqualToString:pass] == YES)
         {
-            MainViewController *controller = [[MainViewController alloc] init];
-            [mainAppDelegate.navigationController popToRootViewControllerAnimated:NO];
-            [mainAppDelegate.navigationController pushViewController:controller animated:YES];
-            controller = nil;
+            //MainViewController *controller = [[MainViewController alloc] init];
+            FunctionViewController *leftController = [[FunctionViewController alloc] init];
+            [mainAppDelegate.navigationController setLeftMenu:leftController];
+//            HomeViewController *controller = [[HomeViewController alloc] init];
+//            [mainAppDelegate.navigationController popToRootViewControllerAnimated:NO];
+//            [mainAppDelegate.navigationController pushViewController:controller animated:YES];
+            [mainAppDelegate showController:kHomeController];
+            leftController = nil;
+            //controller = nil;
         }
         else
         {

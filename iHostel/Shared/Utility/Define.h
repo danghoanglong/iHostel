@@ -54,11 +54,11 @@
 #define kWaterPrice                         @"WaterPrice"
 #define kInternetPrice                      @"InternetPrice"
 
-#define kActionHome                         0
-#define kActionMember                       1
-#define kActionReceipt                      2
-#define kActionReport                       3
-#define kActionSetting                      4
+#define kHomeController                     0
+#define kListMemberController               1
+#define kReceiptManagementController        2
+#define kReportManagementController         3
+#define kSettingController                  4
 
 //----------------------------------------------------------------
 #pragma mark Message

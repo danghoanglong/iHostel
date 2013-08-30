@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SlideNavigationController.h"
 
-@interface HostelSettingViewController : UIViewController <UITextFieldDelegate>
+@interface HostelSettingViewController : UIViewController <UITextFieldDelegate, SlideNavigationControllerDelegate>
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet UIView *contentView;
@@ -20,8 +21,8 @@
 @property (strong, nonatomic) IBOutlet UITextField *wasterPriceTextField;
 @property (strong, nonatomic) IBOutlet UITextField *internetPriceTextField;
 @property (strong, nonatomic) IBOutlet UIButton *saveButton;
-@property (strong, nonatomic) IBOutlet UIButton *backButton;
+@property (strong, nonatomic) IBOutlet UIButton *slideOutButton;
 
 - (IBAction)saveButtonPressed:(id)sender;
-- (IBAction)backButtonPressed:(id)sender;
+- (IBAction)slideOutButtonPressed:(id)sender;
 @end

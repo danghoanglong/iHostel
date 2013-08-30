@@ -31,8 +31,6 @@
 		BE95D11517CDAEBC00DC2C41 /* iHostel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE95D11317CDAEBC00DC2C41 /* iHostel.xcdatamodeld */; };
 		BE95D11917CDD95700DC2C41 /* AddMemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE95D11717CDD95600DC2C41 /* AddMemberViewController.m */; };
 		BE95D11A17CDD95700DC2C41 /* AddMemberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE95D11817CDD95700DC2C41 /* AddMemberViewController.xib */; };
-		BE95D12217CDE25D00DC2C41 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE95D12017CDE25D00DC2C41 /* MainViewController.m */; };
-		BE95D12317CDE25D00DC2C41 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE95D12117CDE25D00DC2C41 /* MainViewController.xib */; };
 		BE95D12717CDE29F00DC2C41 /* FunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE95D12517CDE29F00DC2C41 /* FunctionViewController.m */; };
 		BE95D12817CDE29F00DC2C41 /* FunctionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE95D12617CDE29F00DC2C41 /* FunctionViewController.xib */; };
 		BE95D12A17CDE57500DC2C41 /* Main_SlideOutButton.png in Resources */ = {isa = PBXBuildFile; fileRef = BE95D12917CDE57500DC2C41 /* Main_SlideOutButton.png */; };
@@ -53,6 +51,22 @@
 		BEA1674D17CC9ACD0014CFAF /* Main_CirleLine.png in Resources */ = {isa = PBXBuildFile; fileRef = BEA1674C17CC9ACD0014CFAF /* Main_CirleLine.png */; };
 		BEA1674F17CCA5120014CFAF /* Main_ShortButton.png in Resources */ = {isa = PBXBuildFile; fileRef = BEA1674E17CCA5120014CFAF /* Main_ShortButton.png */; };
 		BEA1675117CCAE2D0014CFAF /* Main_BackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = BEA1675017CCAE2D0014CFAF /* Main_BackButton.png */; };
+		BEFC07EA17D059E000716C77 /* SlideNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFC07E917D059E000716C77 /* SlideNavigationController.m */; };
+		BEFC07EE17D07CFF00716C77 /* ListMemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFC07EC17D07CFF00716C77 /* ListMemberViewController.m */; };
+		BEFC07EF17D07CFF00716C77 /* ListMemberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEFC07ED17D07CFF00716C77 /* ListMemberViewController.xib */; };
+		BEFC07F417D08F2600716C77 /* ReceiptManagementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFC07F217D08F2600716C77 /* ReceiptManagementViewController.m */; };
+		BEFC07F517D08F2600716C77 /* ReceiptManagementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEFC07F317D08F2600716C77 /* ReceiptManagementViewController.xib */; };
+		BEFC07FA17D08F5D00716C77 /* ReportManagementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFC07F817D08F5D00716C77 /* ReportManagementViewController.m */; };
+		BEFC07FB17D08F5D00716C77 /* ReportManagementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEFC07F917D08F5D00716C77 /* ReportManagementViewController.xib */; };
+		BEFC07FD17D0A3B900716C77 /* FunctionScreen_MemberManagement_Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = BEFC07FC17D0A3B900716C77 /* FunctionScreen_MemberManagement_Selected.png */; };
+		BEFC080217D0B3F800716C77 /* FunctionScreen_HomeManagement_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = BEFC07FE17D0B3F800716C77 /* FunctionScreen_HomeManagement_selected.png */; };
+		BEFC080317D0B3F800716C77 /* FunctionScreen_ReceiptManagement_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = BEFC07FF17D0B3F800716C77 /* FunctionScreen_ReceiptManagement_selected.png */; };
+		BEFC080417D0B3F800716C77 /* FunctionScreen_ReportManagement_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = BEFC080017D0B3F800716C77 /* FunctionScreen_ReportManagement_selected.png */; };
+		BEFC080517D0B3F800716C77 /* FunctionScreen_SettingManagement_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = BEFC080117D0B3F800716C77 /* FunctionScreen_SettingManagement_selected.png */; };
+		BEFC080817D0B53300716C77 /* MemberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFC080717D0B53300716C77 /* MemberCell.m */; };
+		BEFC080A17D0B54900716C77 /* MemberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEFC080917D0B54900716C77 /* MemberCell.xib */; };
+		BEFC080C17D0C17100716C77 /* MemberCell_Album.png in Resources */ = {isa = PBXBuildFile; fileRef = BEFC080B17D0C17100716C77 /* MemberCell_Album.png */; };
+		BEFC080E17D0C67C00716C77 /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = BEFC080D17D0C67C00716C77 /* avatar.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,9 +102,6 @@
 		BE95D11617CDD95600DC2C41 /* AddMemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMemberViewController.h; sourceTree = "<group>"; };
 		BE95D11717CDD95600DC2C41 /* AddMemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMemberViewController.m; sourceTree = "<group>"; };
 		BE95D11817CDD95700DC2C41 /* AddMemberViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddMemberViewController.xib; sourceTree = "<group>"; };
-		BE95D11F17CDE25D00DC2C41 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		BE95D12017CDE25D00DC2C41 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		BE95D12117CDE25D00DC2C41 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		BE95D12417CDE29F00DC2C41 /* FunctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionViewController.h; sourceTree = "<group>"; };
 		BE95D12517CDE29F00DC2C41 /* FunctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionViewController.m; sourceTree = "<group>"; };
 		BE95D12617CDE29F00DC2C41 /* FunctionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FunctionViewController.xib; sourceTree = "<group>"; };
@@ -116,6 +127,27 @@
 		BEA1674C17CC9ACD0014CFAF /* Main_CirleLine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Main_CirleLine.png; sourceTree = "<group>"; };
 		BEA1674E17CCA5120014CFAF /* Main_ShortButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Main_ShortButton.png; sourceTree = "<group>"; };
 		BEA1675017CCAE2D0014CFAF /* Main_BackButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Main_BackButton.png; sourceTree = "<group>"; };
+		BEFC07E817D059E000716C77 /* SlideNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideNavigationController.h; sourceTree = "<group>"; };
+		BEFC07E917D059E000716C77 /* SlideNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideNavigationController.m; sourceTree = "<group>"; };
+		BEFC07EB17D07CFF00716C77 /* ListMemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListMemberViewController.h; sourceTree = "<group>"; };
+		BEFC07EC17D07CFF00716C77 /* ListMemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListMemberViewController.m; sourceTree = "<group>"; };
+		BEFC07ED17D07CFF00716C77 /* ListMemberViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListMemberViewController.xib; sourceTree = "<group>"; };
+		BEFC07F117D08F2600716C77 /* ReceiptManagementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceiptManagementViewController.h; sourceTree = "<group>"; };
+		BEFC07F217D08F2600716C77 /* ReceiptManagementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceiptManagementViewController.m; sourceTree = "<group>"; };
+		BEFC07F317D08F2600716C77 /* ReceiptManagementViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReceiptManagementViewController.xib; sourceTree = "<group>"; };
+		BEFC07F717D08F5D00716C77 /* ReportManagementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportManagementViewController.h; sourceTree = "<group>"; };
+		BEFC07F817D08F5D00716C77 /* ReportManagementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportManagementViewController.m; sourceTree = "<group>"; };
+		BEFC07F917D08F5D00716C77 /* ReportManagementViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReportManagementViewController.xib; sourceTree = "<group>"; };
+		BEFC07FC17D0A3B900716C77 /* FunctionScreen_MemberManagement_Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FunctionScreen_MemberManagement_Selected.png; sourceTree = "<group>"; };
+		BEFC07FE17D0B3F800716C77 /* FunctionScreen_HomeManagement_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FunctionScreen_HomeManagement_selected.png; sourceTree = "<group>"; };
+		BEFC07FF17D0B3F800716C77 /* FunctionScreen_ReceiptManagement_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FunctionScreen_ReceiptManagement_selected.png; sourceTree = "<group>"; };
+		BEFC080017D0B3F800716C77 /* FunctionScreen_ReportManagement_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FunctionScreen_ReportManagement_selected.png; sourceTree = "<group>"; };
+		BEFC080117D0B3F800716C77 /* FunctionScreen_SettingManagement_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FunctionScreen_SettingManagement_selected.png; sourceTree = "<group>"; };
+		BEFC080617D0B53300716C77 /* MemberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberCell.h; sourceTree = "<group>"; };
+		BEFC080717D0B53300716C77 /* MemberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberCell.m; sourceTree = "<group>"; };
+		BEFC080917D0B54900716C77 /* MemberCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemberCell.xib; sourceTree = "<group>"; };
+		BEFC080B17D0C17100716C77 /* MemberCell_Album.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MemberCell_Album.png; sourceTree = "<group>"; };
+		BEFC080D17D0C67C00716C77 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +168,13 @@
 		BE80C0CD17CB6A3000D4552E /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				BEFC080D17D0C67C00716C77 /* avatar.png */,
+				BEFC080B17D0C17100716C77 /* MemberCell_Album.png */,
+				BEFC07FE17D0B3F800716C77 /* FunctionScreen_HomeManagement_selected.png */,
+				BEFC07FF17D0B3F800716C77 /* FunctionScreen_ReceiptManagement_selected.png */,
+				BEFC080017D0B3F800716C77 /* FunctionScreen_ReportManagement_selected.png */,
+				BEFC080117D0B3F800716C77 /* FunctionScreen_SettingManagement_selected.png */,
+				BEFC07FC17D0A3B900716C77 /* FunctionScreen_MemberManagement_Selected.png */,
 				BE95D12F17CE090000DC2C41 /* FunctionScreen_ReceiptManagement.png */,
 				BE95D13017CE090000DC2C41 /* FunctionScreen_HomeManagement.png */,
 				BE95D13117CE090000DC2C41 /* FunctionScreen_ReportManagement.png */,
@@ -233,6 +272,8 @@
 		BE87AE4E17CB5062009C5B93 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				BEFC07F617D08F3B00716C77 /* Report Management */,
+				BEFC07F017D08ECC00716C77 /* Receipt Management */,
 				BE95D11E17CDE20B00DC2C41 /* Member Management */,
 				BE95D11D17CDE1FC00DC2C41 /* Home */,
 				BE95D11C17CDE1E400DC2C41 /* Setting */,
@@ -247,6 +288,9 @@
 				BE95D10E17CDA9D600DC2C41 /* MemberView.xib */,
 				BE95D11017CDA9EE00DC2C41 /* MemberView.h */,
 				BE95D11117CDA9EE00DC2C41 /* MemberView.m */,
+				BEFC080617D0B53300716C77 /* MemberCell.h */,
+				BEFC080717D0B53300716C77 /* MemberCell.m */,
+				BEFC080917D0B54900716C77 /* MemberCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -254,6 +298,7 @@
 		BE87AE5017CB5062009C5B93 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				BEFC07E717D059E000716C77 /* Kit */,
 				BEA1673717CC4CF50014CFAF /* Utility */,
 				BE80C0CD17CB6A3000D4552E /* Assets */,
 				BE87AE5117CB5062009C5B93 /* Database */,
@@ -295,9 +340,6 @@
 				BE95D10617CD9CB200DC2C41 /* HomeViewController.h */,
 				BE95D10717CD9CB200DC2C41 /* HomeViewController.m */,
 				BE95D10817CD9CB200DC2C41 /* HomeViewController.xib */,
-				BE95D11F17CDE25D00DC2C41 /* MainViewController.h */,
-				BE95D12017CDE25D00DC2C41 /* MainViewController.m */,
-				BE95D12117CDE25D00DC2C41 /* MainViewController.xib */,
 				BE95D12417CDE29F00DC2C41 /* FunctionViewController.h */,
 				BE95D12517CDE29F00DC2C41 /* FunctionViewController.m */,
 				BE95D12617CDE29F00DC2C41 /* FunctionViewController.xib */,
@@ -311,6 +353,9 @@
 				BE95D11617CDD95600DC2C41 /* AddMemberViewController.h */,
 				BE95D11717CDD95600DC2C41 /* AddMemberViewController.m */,
 				BE95D11817CDD95700DC2C41 /* AddMemberViewController.xib */,
+				BEFC07EB17D07CFF00716C77 /* ListMemberViewController.h */,
+				BEFC07EC17D07CFF00716C77 /* ListMemberViewController.m */,
+				BEFC07ED17D07CFF00716C77 /* ListMemberViewController.xib */,
 			);
 			name = "Member Management";
 			sourceTree = "<group>";
@@ -325,6 +370,35 @@
 				BEA1674117CC72E50014CFAF /* GlobalObjects.m */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		BEFC07E717D059E000716C77 /* Kit */ = {
+			isa = PBXGroup;
+			children = (
+				BEFC07E817D059E000716C77 /* SlideNavigationController.h */,
+				BEFC07E917D059E000716C77 /* SlideNavigationController.m */,
+			);
+			path = Kit;
+			sourceTree = "<group>";
+		};
+		BEFC07F017D08ECC00716C77 /* Receipt Management */ = {
+			isa = PBXGroup;
+			children = (
+				BEFC07F117D08F2600716C77 /* ReceiptManagementViewController.h */,
+				BEFC07F217D08F2600716C77 /* ReceiptManagementViewController.m */,
+				BEFC07F317D08F2600716C77 /* ReceiptManagementViewController.xib */,
+			);
+			name = "Receipt Management";
+			sourceTree = "<group>";
+		};
+		BEFC07F617D08F3B00716C77 /* Report Management */ = {
+			isa = PBXGroup;
+			children = (
+				BEFC07F717D08F5D00716C77 /* ReportManagementViewController.h */,
+				BEFC07F817D08F5D00716C77 /* ReportManagementViewController.m */,
+				BEFC07F917D08F5D00716C77 /* ReportManagementViewController.xib */,
+			);
+			name = "Report Management";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,7 +473,6 @@
 				BE95D10A17CD9CB200DC2C41 /* HomeViewController.xib in Resources */,
 				BE95D10F17CDA9D600DC2C41 /* MemberView.xib in Resources */,
 				BE95D11A17CDD95700DC2C41 /* AddMemberViewController.xib in Resources */,
-				BE95D12317CDE25D00DC2C41 /* MainViewController.xib in Resources */,
 				BE95D12817CDE29F00DC2C41 /* FunctionViewController.xib in Resources */,
 				BE95D12A17CDE57500DC2C41 /* Main_SlideOutButton.png in Resources */,
 				BE95D12C17CDF49000DC2C41 /* FunctionScreen_Roof.png in Resources */,
@@ -408,6 +481,17 @@
 				BE95D13417CE090000DC2C41 /* FunctionScreen_HomeManagement.png in Resources */,
 				BE95D13517CE090000DC2C41 /* FunctionScreen_ReportManagement.png in Resources */,
 				BE95D13617CE090000DC2C41 /* FunctionScreen_SettingManagement.png in Resources */,
+				BEFC07EF17D07CFF00716C77 /* ListMemberViewController.xib in Resources */,
+				BEFC07F517D08F2600716C77 /* ReceiptManagementViewController.xib in Resources */,
+				BEFC07FB17D08F5D00716C77 /* ReportManagementViewController.xib in Resources */,
+				BEFC07FD17D0A3B900716C77 /* FunctionScreen_MemberManagement_Selected.png in Resources */,
+				BEFC080217D0B3F800716C77 /* FunctionScreen_HomeManagement_selected.png in Resources */,
+				BEFC080317D0B3F800716C77 /* FunctionScreen_ReceiptManagement_selected.png in Resources */,
+				BEFC080417D0B3F800716C77 /* FunctionScreen_ReportManagement_selected.png in Resources */,
+				BEFC080517D0B3F800716C77 /* FunctionScreen_SettingManagement_selected.png in Resources */,
+				BEFC080A17D0B54900716C77 /* MemberCell.xib in Resources */,
+				BEFC080C17D0C17100716C77 /* MemberCell_Album.png in Resources */,
+				BEFC080E17D0C67C00716C77 /* avatar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,8 +512,12 @@
 				BE95D11217CDA9EE00DC2C41 /* MemberView.m in Sources */,
 				BE95D11517CDAEBC00DC2C41 /* iHostel.xcdatamodeld in Sources */,
 				BE95D11917CDD95700DC2C41 /* AddMemberViewController.m in Sources */,
-				BE95D12217CDE25D00DC2C41 /* MainViewController.m in Sources */,
 				BE95D12717CDE29F00DC2C41 /* FunctionViewController.m in Sources */,
+				BEFC07EA17D059E000716C77 /* SlideNavigationController.m in Sources */,
+				BEFC07EE17D07CFF00716C77 /* ListMemberViewController.m in Sources */,
+				BEFC07F417D08F2600716C77 /* ReceiptManagementViewController.m in Sources */,
+				BEFC07FA17D08F5D00716C77 /* ReportManagementViewController.m in Sources */,
+				BEFC080817D0B53300716C77 /* MemberCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,21 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FunctionViewController.h"
+#import "SlideNavigationController.h"
 
-@protocol HomeViewControllerDelegate <NSObject>
+@interface HomeViewController : UIViewController <UIScrollViewDelegate, SlideNavigationControllerDelegate>
 
-@optional
-- (void)movePanelRight;
-
-@required
-- (void)movePanelToOriginalPosition;
-
-@end
-
-@interface HomeViewController : UIViewController <UIScrollViewDelegate>
-
-@property (nonatomic, assign) id<HomeViewControllerDelegate> delegate;
 @property (strong, nonatomic) IBOutlet UILabel *hostelName;
 @property (strong, nonatomic) IBOutlet UIButton *slideOutButton;
 

@@ -1,20 +1,18 @@
 //
-//  HomeViewController.m
+//  ReceiptManagementViewController.m
 //  iHostel
 //
-//  Created by long.dang on 8/28/13.
+//  Created by long.dang on 8/30/13.
 //  Copyright (c) 2013 DHL. All rights reserved.
 //
 
-#import "HomeViewController.h"
-#import "GlobalObjects.h"
-#import "Define.h"
+#import "ReceiptManagementViewController.h"
 
-@interface HomeViewController ()
+@interface ReceiptManagementViewController ()
 
 @end
 
-@implementation HomeViewController
+@implementation ReceiptManagementViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,30 +27,12 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self setUpView];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void)viewDidUnload {
-    [self setHostelName:nil];
-    [self setSlideOutButton:nil];
-    [super viewDidUnload];
-}
-
-#pragma mark Initials
-- (void)setUpView
-{
-    self.hostelName.text = [[GlobalObjects sharedInstance].userDefaults objectForKey:kHostelName];
 }
 
 #pragma mark Events
@@ -71,5 +51,4 @@
 {
     return NO;
 }
-
 @end

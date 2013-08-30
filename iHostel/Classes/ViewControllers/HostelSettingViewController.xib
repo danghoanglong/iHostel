@@ -541,7 +541,7 @@
 								<string key="NSFrameSize">{320, 76}</string>
 								<reference key="NSSuperview" ref="790448049"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="219354780"/>
+								<reference key="NSNextKeyView" ref="199444553"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -550,10 +550,10 @@
 									<string key="NSResourceName">Main_Roof.png</string>
 								</object>
 							</object>
-							<object class="IBUIButton" id="219354780">
+							<object class="IBUIButton" id="199444553">
 								<reference key="NSNextResponder" ref="790448049"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{7, 10}, {32, 33}}</string>
+								<string key="NSFrame">{{7, 8}, {32, 32}}</string>
 								<reference key="NSSuperview" ref="790448049"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="421151788"/>
@@ -570,7 +570,7 @@
 								<reference key="IBUINormalTitleShadowColor" ref="930935620"/>
 								<object class="NSCustomResource" key="IBUINormalImage">
 									<string key="NSClassName">NSImage</string>
-									<string key="NSResourceName">Main_BackButton.png</string>
+									<string key="NSResourceName">Main_SlideOutButton.png</string>
 								</object>
 								<object class="IBUIFontDescription" key="IBUIFontDescription">
 									<int key="type">2</int>
@@ -697,11 +697,11 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">backButton</string>
+						<string key="label">slideOutButton</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="219354780"/>
+						<reference key="destination" ref="199444553"/>
 					</object>
-					<int key="connectionID">55</int>
+					<int key="connectionID">58</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
@@ -770,12 +770,12 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">backButtonPressed:</string>
-						<reference key="source" ref="219354780"/>
+						<string key="label">slideOutButtonPressed:</string>
+						<reference key="source" ref="199444553"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">7</int>
 					</object>
-					<int key="connectionID">56</int>
+					<int key="connectionID">59</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -991,8 +991,8 @@
 						<int key="objectID">54</int>
 						<reference key="object" ref="790448049"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="219354780"/>
 							<reference ref="1009406745"/>
+							<reference ref="199444553"/>
 						</array>
 						<reference key="parent" ref="191373211"/>
 						<string key="objectName">Navigation Bar</string>
@@ -1003,8 +1003,8 @@
 						<reference key="parent" ref="790448049"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">53</int>
-						<reference key="object" ref="219354780"/>
+						<int key="objectID">57</int>
+						<reference key="object" ref="199444553"/>
 						<reference key="parent" ref="790448049"/>
 					</object>
 				</array>
@@ -1039,8 +1039,8 @@
 				<string key="33.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="4.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="5.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="53.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="54.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="57.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="6.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="8.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="9.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -1049,7 +1049,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">56</int>
+			<int key="maxID">59</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1057,21 +1057,20 @@
 					<string key="className">HostelSettingViewController</string>
 					<string key="superclassName">UIViewController</string>
 					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="backButtonPressed:">id</string>
 						<string key="saveButtonPressed:">id</string>
+						<string key="slideOutButtonPressed:">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="backButtonPressed:">
-							<string key="name">backButtonPressed:</string>
-							<string key="candidateClassName">id</string>
-						</object>
 						<object class="IBActionInfo" key="saveButtonPressed:">
 							<string key="name">saveButtonPressed:</string>
 							<string key="candidateClassName">id</string>
 						</object>
+						<object class="IBActionInfo" key="slideOutButtonPressed:">
+							<string key="name">slideOutButtonPressed:</string>
+							<string key="candidateClassName">id</string>
+						</object>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="backButton">UIButton</string>
 						<string key="contentView">UIView</string>
 						<string key="energyPriceTextField">UITextField</string>
 						<string key="hostelAddressTextField">UITextField</string>
@@ -1081,13 +1080,10 @@
 						<string key="masterPhoneTextField">UITextField</string>
 						<string key="saveButton">UIButton</string>
 						<string key="scrollView">UIScrollView</string>
+						<string key="slideOutButton">UIButton</string>
 						<string key="wasterPriceTextField">UITextField</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="backButton">
-							<string key="name">backButton</string>
-							<string key="candidateClassName">UIButton</string>
-						</object>
 						<object class="IBToOneOutletInfo" key="contentView">
 							<string key="name">contentView</string>
 							<string key="candidateClassName">UIView</string>
@@ -1124,6 +1120,10 @@
 							<string key="name">scrollView</string>
 							<string key="candidateClassName">UIScrollView</string>
 						</object>
+						<object class="IBToOneOutletInfo" key="slideOutButton">
+							<string key="name">slideOutButton</string>
+							<string key="candidateClassName">UIButton</string>
+						</object>
 						<object class="IBToOneOutletInfo" key="wasterPriceTextField">
 							<string key="name">wasterPriceTextField</string>
 							<string key="candidateClassName">UITextField</string>
@@ -1142,10 +1142,10 @@
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
 			<string key="LoginScreen_Background.png">{640, 920}</string>
-			<string key="Main_BackButton.png">{64, 64}</string>
 			<string key="Main_CirleLine.png">{130, 10}</string>
 			<string key="Main_Roof.png">{640, 152}</string>
 			<string key="Main_ShortButton.png">{200, 74}</string>
+			<string key="Main_SlideOutButton.png">{64, 64}</string>
 			<string key="Main_TextField.png">{404, 74}</string>
 		</dictionary>
 		<string key="IBCocoaTouchPluginVersion">2083</string>
